@@ -1,0 +1,13 @@
+server:
+  port: 8099
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: service-users
+          uri: http://127.0.0.1:8801/
+          predicates:
+            - Path=/v1/usercenter/**
+          filters:
+            - StripPrefix=2
+            - PrefixPath=/v1

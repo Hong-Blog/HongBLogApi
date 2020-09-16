@@ -11,6 +11,7 @@
     <modules>
         <module>service-common</module>
         <module>service-user</module>
+        <module>service-gateway</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
